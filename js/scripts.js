@@ -10,4 +10,12 @@ function newItem() {
         let list = $('#list');
         list.append(li);
     }
+
+    // 2. Crossing out an item from the list of items:
+    function crossOut() {
+        li.toggleClass('strike');
+    }
+
+    li.on('dblclick', crossOut);
+
 }
