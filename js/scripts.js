@@ -34,3 +34,12 @@ function newItem() {
     // 4. Recording the items:
     $('#list').sortable();
 }
+
+// on Enter
+function newItemOnEnter(event) {
+    var x = event.code;
+    if(x == "Enter") {
+        event.preventDefault(); // Don't submit form
+        newItem();
+    }    
+}
