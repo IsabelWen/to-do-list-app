@@ -9,6 +9,7 @@ function newItem() {
     } else {
         let list = $('#list');
         list.append(li);
+        $('#input').val(""); // Reset input field
     }
 
     // 2. Crossing out an item from the list of items:
